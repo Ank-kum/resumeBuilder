@@ -1,0 +1,190 @@
+html{
+    background-color:grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    /* background-color: blueviolet; */
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+    /* border: 2px solid #eee; */
+    margin-left: 5px;
+    margin-top: 5px;
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+}
+
+.inputMain{
+    /* background-color:blanchedalmond; */
+    width: 48%;
+    display: block;
+    float: left;
+    margin: 10px 10px 5px 5px;
+    font-weight: bold;
+    border-right:1px solid black;
+}
+.priviewMain{
+    display: block;
+    width: 50%;
+    margin-left: 50%;
+    height: 100%;
+}
+
+.inputHeader{
+    text-align: center;
+    color: darkblue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.inputHeader2{
+    float: left;
+    margin-left: 25%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h1 {  
+    margin-left: 70px;  
+}  
+form li {  
+    list-style: none;  
+    margin-bottom: 5px;  
+}  
+      
+form ul li label{  
+    float: left;  
+    clear: left;  
+    width: 100px;  
+    text-align: right;  
+    margin-right: 10px;  
+    font-family:Verdana, Arial, Helvetica, sans-serif;  
+    font-size:14px;
+    font-weight: lighter;  
+}  
+      
+form ul li input, select, span {  
+    float: left;  
+    margin-bottom: 10px;  
+}  
+      
+form textarea {  
+    float: left;  
+    width: 350px;  
+    height: 150px;  
+} 
+
+form ul li h3{
+    clear:left;
+    font-size: larger;
+    font-weight: bold;
+}
+form ul ul li h4{
+    clear:left;
+    font-size: 14px;
+    font-weight: bold
+}
+      
+[type="submit"] {  
+    clear: left;  
+    margin: 20px 0 0 230px;  
+    font-size:18px  
+}  
+      
+p {  
+    margin-left: 70px;  
+    font-weight: bold;  
+}
+
+.inputskills{
+    display: inline;
+    float: left;
+    margin-left: 25px;
+}
+
+.skillstyle{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+.skillstyle{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+.viewheader{
+    margin-top: auto;
+    display: block;
+    height: 70px;
+    text-align: center;
+}
+
+.part1{
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    width: 17%;
+    float: left;
+    background-color:#008CBA;
+    word-break:normal;
+}
+
+.part2{
+    width: 39%;
+    display: block;
+    margin-left: 56%;
+    padding-left: 10px;
+    word-break:keep-all;
+}
+
+.list{
+    margin-right: 10px;
+}
+
+.contact{
+    clear: left;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 5px;
+    word-break: break-all;
+}
+
+.style{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.para{
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 1.3em;
+}
+
+.subhead{
+    margin-left: 15%;
+}
+.aboutme, .education, .projects{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-left: 14%;
+}
+
+.fbtn{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #008CBA;
+    border-radius: 4px;
+    /* color: #008CBA;
+    background-color:#7DF9FF; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition-duration: 0.4s;
+}
+.fbtn:hover {
+    /* background-color: #008CBA; */
+    color: white;
+}

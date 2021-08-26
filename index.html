@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="form.css"/>
+    </head>
+    <body>
+        <div class="header">Quollab's CV Generator</div>
+        <div class="inputMain"> 
+            <div class="inputHeader">INPUT DETAILS HERE</div>
+            <div class="inputForm"> 
+                <form name='registration'>  
+                    <ul>
+                        <li><h3 id="x"><br>Personal Information</h3></li>
+        
+                            <li><label for="username1">First Name:</label></li>  
+                            <li><input type="text" name="username1" size="50" required /></li>
+                        
+                            <li><label for="username2">Last Name:</label></li>  
+                            <li><input type="text" name="username2" size="50" required /></li>
+                           
+                            <li><label for="email">Email:</label></li>  
+                            <li><input type="text" name="email" size="50" required /></li>
+            
+                            <li><label for="country" >Country:</label></li>  
+                            <li>
+                                <select name="country" required>  
+                                    <option selected="" value="Default"> Select Country &emsp; </option>  
+                                    <option value="AF">Australia</option>  
+                                    <option value="AL">Canada</option>  
+                                    <option value="DZ">India</option>  
+                                    <option value="AS">Russia</option>  
+                                    <option value="AD">USA</option>  
+                                </select>
+                            </li>  
+                            
+                            <li><label for="state">State:</label></li>  
+                            <li><input type="text" name="state" required/></li>
+             
+            
+                            <li><label id="gender">Sex:</label></li>  
+                            <li><input type="radio" name="sex" value="Male" /><span>Male</span></li>  
+                            <li><input type="radio" name="sex" value="Female" /><span>Female</span></li> 
+            
+                            <li><label for="desc">About:</label></li>  
+                            <li><textarea name="desc" id="desc" placeholder="Give description upto 500 characters." maxlength="500" required></textarea></li>
+
+
+                        <li><h3 id="y"><br>Education</h3></li>
+                        
+                        <ul>
+                            <li><h4>Secondary Education / Class X</h4>
+                                <li><label for="board1">Board:</label></li>  
+                                <li><input type="" name="board1" required/></li>
+                
+                                <li><label for="percent1">Percentage (%):</label></li>  
+                                <li><input type="text" name="percent1" size="20" required /></li>
+
+                            <li><h4><br>Senior Secondary Education / Class XII</h4>
+                                <li><label for="board2">Board:</label></li>  
+                                <li><input type="text" name="board2" required/></li>
+                
+                                <li><label for="percent2">Percentage (%):</label></li>  
+                                <li><input type="text" name="percent2" size="20" required /></li>
+                            </li>
+                            <li><h4><br>Highest Degree Institution</h4>
+                                <li><label for="institution">Institution:</label></li>  
+                                <li><input type="text" name="institution" required /></li>
+                                
+                                <li><label for="degree">Degree:</label></li>  
+                                <li><input type="text" name="degree" required/></li> 
+                
+                                <li><label for="dept">Department:</label></li>  
+                                <li><input type="text" name="dept" size="50" /></li>
+                            </li>
+                            </li>
+                        </ul>
+                    </ul>  
+                </form>
+                <pre>   </pre>
+                <div style="margin-left: 30px; float: left;">
+                    <div style="margin-left: 15px;"><br><h3>Fields of Expertise</h3><br>
+                        <input type="text" id="skill1" placeholder="Add upto five Expertise Areas" size="30px" style="margin-left: 15px;" />
+                        <button id="expbutton">Add</button><br>
+                        <div class="explist" id="expertlist" style="margin-top: 10px;">
+                            
+                        </div>
+                    </div>
+
+                    <div style="margin-left: 15px;"><br><h3>Technical Skills</h3>
+                        <h4 style="margin-left: 15px; font-weight: normal;">Programming Languages</h4>
+                        <input type="text" id="skill2" placeholder="Add upto three Languages" size="22px" style="margin-left: 15px;" />
+                        <button id="skillbutton">Add</button>
+                        <div class="slist" id="skilllist">
+
+                        </div>
+
+                        <h4 style="margin-left: 15px;font-weight: normal;">Software and Tools</h4>
+                        <input id="skill3" placeholder="Add upto three software/tools" size="25px" style="margin-left: 15px;"/>
+                        <button id="toolbutton">Add</button>
+                        <div class="tlist" id="toolist">
+
+                        </div>
+                    
+                    </div>
+
+                    <div style="margin-left: 15px;"><br><h3>Internships/Projects</h3><br>
+                        <input id="projtitle" placeholder="Project Title" style="margin-left: 15px;" /><br>
+                        <textarea id="projdesc" placeholder="Project Description (Add upto two Projects)" style="margin-left: 15px;" rows="10" cols="50"></textarea><br>
+                        <button id="projbutton" style="margin-left: 15px;">Add</button>
+                        <div class="projlist" id="projlist">
+
+                        </div>
+
+                    </div>
+
+                    <div style="margin-left: 15px;"><br><h3>Contact Details</h3>
+                        <label for="linkdein" style="margin-left: 15px; font-size: smaller; font-weight: normal;">LinkedIn url:</label>
+                        <input type="text" id="linkedin" size="50" />
+                    </div>
+                    <br>
+                    <div>
+                        <center>
+                            <button type="button" class="fbtn" id="submitbutton" >Submit</button>
+                        </center>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    <!--    ######################################################################################################333   -->
+
+        <div class="previewMain">
+            <div class="inputHeader">
+                <button type="button" class="fbtn" id="previewbtn">Preview</button>
+            </div>
+
+            <div id="preview" class="preview">
+                <div id="viewheader" class="viewheader">
+                    <h1 id="viewname" class="viewname">Name</h1>
+                </div>
+
+                <div class="part1">
+                    <h4 class="subhead2">Expertise</h4>
+                    <ul class="list"> 
+                        <div id="101">
+
+                        </div>
+                        
+                    </ul>
+
+                    <h4 class="subhead2">Technical Skills</h4>
+                    <ul class="list">
+                        <li class="list">Programming Languages
+                            <ul style="list-style-type: square;">
+                                <div id="102">
+
+                                </div>
+                                
+                            </ul>
+                        </li>
+                        <br>
+                        <li class="list">Software and Tools
+                            <ul style="list-style-type: square;">
+                                <div id="103">
+                                    
+                                </div>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="contact">
+                        <h4 class="subhead2">Contact Me</h4>
+                        <t>Email:</t><t id="contactemail"></t> 
+                        <br>
+                        <t>LinkedIn:</t><t id="contactlinkedin"></t>
+                        
+                    </div>
+
+                </div>
+
+                <div class="part2">
+                    <div class="aboutme">
+                        <h4 class="subhead">Profile</h4>
+                        <p class="para" id="aboutme">
+                        </p>
+                        
+                    </div>
+
+                    <div class="education">
+                        <hr>
+                        <h4 class="subhead">Education</h4>
+                        <div class="style">
+                            <p><span id="classx"> &emsp;</span><span><t id="boardx"></t> &emsp;</span><span><t id="xpercent"></t></span></p><br>
+                        </div>
+                        <div class="style">
+                            <p><span id="classxii"> &emsp;</span><span><t id="boardxii"></t> &emsp;</span><span><t id="xiipercent"></t></span></p><br>
+                        </div>
+                        <div class="style">
+                            <p><span><t id="edudegree"></t> &emsp;</span><span><t id="eduinsti"></t> &emsp;</span><span><t id="edudept"></t> &emsp;</span></p><br>
+                        </div>
+                        <p></p>
+                    </div>
+
+                    <div class="projects">
+                        <hr>
+                        <h4 class="subhead">Experience</h4>
+                        <div class="para" id="104">
+                            <p id="104a"><span></span></p>
+                            <p id="104b"></p>
+                        </div>
+                        <div class="para" id="105">
+                            <p id="105a"><span></span></p>
+                            <p id="105b"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="form.js"></script>   
+    </body>
+</html>
